@@ -80,7 +80,7 @@ ul {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.button a {
+.button span {
   font-weight: bold;
   font-size: 16px;
   line-height: 187%;
@@ -93,7 +93,7 @@ ul {
 .button:hover {
   background-color: #ffffff;
 }
-.button a:hover {
+.button span:hover {
   color: #2196f3;
 }
 .h2-studio {
@@ -199,7 +199,7 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.category-list a {
+.category-list span {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -210,7 +210,7 @@ ul {
 .category-list button:hover {
   background-color: #2196f3;
 }
-.category-list button:hover > a {
+.category-list button:hover > span {
   color: #ffffff;
 }
 .all {
