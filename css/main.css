@@ -7,13 +7,22 @@ a {
 ul {
   list-style-type: none;
 }
+html {
+  --hover-color: #2196f3;
+  --p-color: #757575;
+  --bg-color: #2f303a;
+  --text-color: #212121;
+}
+.logo-web {
+  color: var(--hover-color);
+}
 .header * {
   width: 100%;
   height: 80px;
   display: inline;
 }
 .logo-web {
-  color: #2196f3;
+  color: var(--hover-color);
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
@@ -33,23 +42,29 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-color);
 }
 .nav-list a:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--hover-color);
 }
-
+.current-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--hover-color);
+}
 .adress-top a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--p-color);
 }
 .adress-top a:hover {
   font-style: normal;
@@ -57,11 +72,11 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .banner {
   width: 100%;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
 }
 .h1-studio {
   font-weight: 900;
@@ -73,7 +88,7 @@ ul {
   color: #ffffff;
 }
 .button {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   position: relative;
@@ -94,7 +109,7 @@ ul {
   background-color: #ffffff;
 }
 .button span:hover {
-  color: #2196f3;
+  color: var(--hover-color);
 }
 .h2-studio {
   display: none;
@@ -105,14 +120,14 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--text-color);
 }
 .our-skills p {
   font-weight: normal;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--p-color);
 }
 .we-do {
   font-weight: bold;
@@ -120,7 +135,7 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 .our-work li {
   display: inline;
@@ -132,7 +147,7 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 .team-list li {
   display: inline-block;
@@ -147,7 +162,7 @@ ul {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--p-color);
 }
 .team-list h3 {
   font-style: normal;
@@ -156,12 +171,12 @@ ul {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 .footer {
   height: 252px;
   width: 100%;
-  background: #2f303a;
+  background: var(--bg-color);
 }
 .logo-studio-2 {
   font-family: Raleway;
@@ -180,6 +195,9 @@ ul {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.adress-visit:hover {
+  color: var(--hover-color);
+}
 .down-contacts {
   font-style: normal;
   font-weight: normal;
@@ -187,6 +205,9 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.down-contacts:hover {
+  color: var(--hover-color);
 }
 /*Начало стилей "Портфолио"*/
 .category-list li {
@@ -205,10 +226,10 @@ ul {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 .category-list button:hover {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 .category-list button:hover > span {
   color: #ffffff;
@@ -249,7 +270,7 @@ ul {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--text-color);
   padding-left: 24px;
   padding-top: 20px;
   margin: 0px;
@@ -259,7 +280,7 @@ ul {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--p-color);
   padding-left: 24px;
   margin: 0px;
 }
